@@ -85,7 +85,11 @@ const Header = ({
             'site-header-inner',
             bottomDivider && 'has-bottom-divider'
           )}>
-          <Logo />
+          {/* <Logo />
+          Hiding logo for now */}
+          <h4 className="reveal-from-bottom" data-reveal-delay="200">
+              recentfundraising.com
+          </h4>
           {!hideNav &&
             <>
               <button
@@ -112,7 +116,7 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>Documentation</Link>
+                      <Link to="#0" onClick={closeMenu}>Features</Link>
                     </li>
                   </ul>
                   {!hideSignin &&
